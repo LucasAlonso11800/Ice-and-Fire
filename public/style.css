@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Cinzel';
+    color: #ffffff;
+}
+.bg-index{
+    background-image: url(img/Robert\ and\ Rhaegar.jpg);
+    background-size: cover;
+}
+.header{
+    height: 20vh;
+    padding: 2em;
+    box-shadow: 0px 0px 15px 5px #000000;
+}
+
+.link{
+    font-size: 2.5rem;
+    text-decoration: none;
+    text-shadow: 5px 5px 10px #000000;
+    font-weight: 500;
+}
+
+.index-main{
+    height: 80vh;
+    padding: 2em;
+    box-shadow: 0px 0px 15px 5px #000000;
+}
+
+.container{
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.card{
+    width: 30%;
+    text-align: center;
+    height: 60vh;
+    opacity: 0;
+    box-shadow: 0px 0px 15px 5px #000000;
+    animation: enter 1s ease-in-out forwards 0.5s;
+}
+@keyframes enter {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.card-body{
+    background-size: cover;
+    height: 50vh;
+}
+.card-footer{
+    height: 10vh;
+    padding: 0.5em;
+    padding-top: 1em;
+    background-color: #000000;
+    font-weight: 600;
+    font-size: 1rem;
+}
+.card-text{
+    text-decoration: none;
+}
+
+#houses{
+    background-image: url(img/Winterfell.jpg);
+}
+#characters{
+    background-image: url(img/Daenerys.jpg);
+
+}
+
+.bg-houses{
+    background-image: url(img/Blackwater.jpg);
+    background-size: cover;
+}
+.content-container{
+    display: flex;
+    min-height: 80vh;
+}
+.aside{
+    width: 20%;
+    box-shadow: 0px 0px 15px 5px #000000;
+}
+.title{
+    text-align: center;
+    padding: 1em;
+    box-shadow: 0px 0px 15px 5px #000000;
+}
+.list-houses{
+    width: 100%;
+    list-style-type: none;
+}
+.list-houses__item{
+    padding: 1em;
+    text-align: center;
+    box-shadow: 0px 0px 15px 5px #000000;
+    font-weight: 600;
+}
+.main{
+    width: 80%;
+    box-shadow: 0px 0px 15px 5px #000000;
+}
