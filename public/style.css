@@ -8,13 +8,16 @@
 .bg-index{
     background-image: url(img/Robert\ and\ Rhaegar.jpg);
     background-size: cover;
+    background-position-y: -4em;
 }
 .header{
     height: 20vh;
     padding: 2em;
-    box-shadow: 0px 0px 15px 5px #000000;
+    box-shadow: 0px 0px 10px 2px #000000;
 }
-
+#no-shadow{
+    box-shadow: none;
+}
 .link{
     font-size: 2.5rem;
     text-decoration: none;
@@ -25,7 +28,7 @@
 .index-main{
     height: 80vh;
     padding: 2em;
-    box-shadow: 0px 0px 15px 5px #000000;
+    padding-top: 6em;
 }
 
 .container{
@@ -38,8 +41,8 @@
     text-align: center;
     height: 60vh;
     opacity: 0;
-    box-shadow: 0px 0px 15px 5px #000000;
-    animation: enter 1s ease-in-out forwards 0.5s;
+    box-shadow: 0px 0px 10px 2px #000000;
+    animation: enter 2s ease-in-out forwards;
 }
 @keyframes enter {
     0%{
@@ -70,7 +73,11 @@
 }
 #characters{
     background-image: url(img/Daenerys.jpg);
-
+}
+#books{
+    background-image: url(img/Drogon.jpg);
+    background-position-y: center;
+    background-position-x: -8em;
 }
 
 .bg-houses{
@@ -83,12 +90,18 @@
 }
 .aside{
     width: 20%;
-    box-shadow: 0px 0px 15px 5px #000000;
+    box-shadow: 0px 0px 10px 2px #000000;
 }
-.title{
+.select-house{
     text-align: center;
     padding: 1em;
-    box-shadow: 0px 0px 15px 5px #000000;
+    box-shadow: 0px 0px 10px 2px #000000;
+}
+.select-house:hover{
+    background: rgba(255, 255, 255, 0.5);
+    color: #000000;
+    font-weight: bold;
+    letter-spacing: 1px;
 }
 .list-houses{
     width: 100%;
@@ -97,10 +110,41 @@
 .list-houses__item{
     padding: 1em;
     text-align: center;
-    box-shadow: 0px 0px 15px 5px #000000;
+    box-shadow: 0px 0px 10px 2px #000000;
     font-weight: 600;
 }
-.main{
+.list-houses__item:hover{
+    background: rgba(255, 255, 255, 0.5);
+    color: #000000;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+.content{
     width: 80%;
-    box-shadow: 0px 0px 15px 5px #000000;
+    box-shadow: 0px 0px 10px 2px #000000;
+}
+#houseName{
+    text-align: center;
+    padding: 1em;
+    letter-spacing: 2px;
+}
+.house-info-container{
+    display: flex;
+}
+.houseInfo{
+    padding: 0 2em;
+    width: 75%;
+}
+#houseImg{
+    width: 40%;
+    height: 30vh;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.info{
+    margin-bottom: 1em;
+}
+b{
+    text-decoration: underline #ffffff;
 }

@@ -4,9 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <title>The world of Ice and Fire</title>
+    <title>The World of Ice and Fire</title>
 </head>
 
 <body>
@@ -18,7 +19,7 @@
         </header>
         <div class="content-container">
             <aside class="aside">
-                <h2 class="title">Select a house</h2>
+                <h2 class="select-house">Select a house</h2>
                 <ul class="list-houses">
                     <li class="list-houses__item" id="targaryen">House Targaryen</li>
                     <li class="list-houses__item" id="stark">House Stark</li>
@@ -29,13 +30,25 @@
                     <li class="list-houses__item" id="baratheon">House Baratheon</li>
                     <li class="list-houses__item" id="tyrell">House Tyrell</li>
                     <li class="list-houses__item" id="martell">House Martell</li>
-                </ul>            
+                </ul>
             </aside>
-            <main class="main">
-                <h2 class="title" id="housesInfoTitle"></h2>
+            <main class="content">
+                <h2 id="houseName"></h2>
+                <div class="house-info-container">
+                    <div class="houseInfo">
+                        <p class="info" id="houseFounded"></p>
+                        <p class="info" id="houseRegion"></p>
+                        <p class="info" id="houseCoat"></p>
+                        <p class="info" id="houseTitles"></p>
+                        <p class="info" id="houseSeat"></p>
+                        <p class="info" id="houseWords"></p>
+                    </div>
+                    <div id="houseImg"></div>
+                </div>
             </main>
         </div>
     </div>
+    <script src="houses.js"></script>
 </body>
 
 </html>
