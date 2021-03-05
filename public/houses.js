@@ -67,15 +67,15 @@ function getHouseData(houseId, img) {
 
 function setHouseData(data, img) {
     houseName.innerHTML = `${data.name}`;
-    houseFounded.innerHTML = `<b>Founded:</b> ${data.founded}`;
-    houseRegion.innerHTML = `<b>Region:</b> ${data.region}`;
-    houseCoat.innerHTML = `<b>Coat of arms:</b> ${data.coatOfArms}`;
+    houseFounded.innerHTML = `<b>Founded:</b> ${data.founded}.`;
+    houseRegion.innerHTML = `<b>Region:</b> ${data.region}.`;
+    houseCoat.innerHTML = `<b>Coat of arms:</b> ${data.coatOfArms}.`;
     houseTitles.innerHTML = `<b>Titles:</b> ${data.titles[0]}, ${data.titles[1]}, ${data.titles[2]}.`;
     if (img === 'url(img/Tully.png)' || 'url(img/Baratheon.png)') {
         houseTitles.innerHTML = `<b>Titles:</b> ${data.titles[0]}, ${data.titles[1]}.`;
     }
-    houseSeat.innerHTML = `<b>Seats:</b> ${data.seats}`;
-    houseWords.innerHTML = `<b>Words:</b> ${data.words}`;
+    houseSeat.innerHTML = `<b>Seats:</b> ${data.seats}.`;
+    houseWords.innerHTML = `<b>Words:</b> ${data.words}.`;
     houseImg.style.backgroundImage = img;
 };
 

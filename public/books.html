@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="books.css">
+    <title>The World of Ice and Fire</title>
+</head>
+
+<body>
+    <header class="header">
+        <nav class="nav">
+            <a class="link" href="index.html">The world of Ice and Fire</a>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="books">
+            <h2 class="select-book">Select a Book</h2>
+            <div class="list-container">
+                <ul class="list">
+                    <li class="list__item" id="game">A Game of Thrones</li>
+                    <li class="list__item" id="clash">A Clash of Kings</li>
+                    <li class="list__item" id="storm">A Storm of Swords</li>
+                    <li class="list__item" id="feast">A Feast for Crows</li>
+                    <li class="list__item" id="dance">A Dance with Dragons</li>
+                </ul>
+            </div>
+        </div>
+
+        <main class="content">
+            <div class="book-info-container">
+                <h2 id="book-name"></h2>
+                <div class="book-info">
+                    <p class="info" id="book-author"></p>
+                    <p class="info" id="book-isbn"></p>
+                    <p class="info" id="book-pages"></p>
+                    <p class="info" id="book-date"></p>
+                </div>
+                <div id="book-img"></div>
+            </div>
+        </main>
+    </div>
+    <script src="books.js"></script>
+</body>
+
+</html>

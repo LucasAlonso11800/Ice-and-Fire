@@ -4,6 +4,7 @@
     box-sizing: border-box;
     font-family: 'Cinzel';
     color: #ffffff;
+    scroll-behavior: smooth;
 }
 body{
     background-image: url(img/Westeros.jpg);
@@ -81,7 +82,7 @@ body{
     background-position: center;
 }
 #character-name{
-    text-align: center;
+    margin-bottom: 1em;
 }
 .info{
     margin-bottom: 1em;

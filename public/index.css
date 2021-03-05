@@ -4,6 +4,7 @@
     box-sizing: border-box;
     font-family: 'Cinzel';
     color: #ffffff;
+    scroll-behavior: smooth;
 }
 body{
     background-image: url(img/Robert\ and\ Rhaegar.jpg);
