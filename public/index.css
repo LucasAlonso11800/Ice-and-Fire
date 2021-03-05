@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Cinzel';
+    color: #ffffff;
+}
+body{
+    background-image: url(img/Robert\ and\ Rhaegar.jpg);
+    background-size: cover;
+    background-position-y: -4em;
+    min-height: 100vh;
+}
+.header{
+    height: 20vh;
+    padding: 2em;
+}
+
+.link{
+    font-size: 2.5rem;
+    text-decoration: none;
+    text-shadow: 5px 5px 10px #000000;
+    font-weight: 500;
+}
+
+.index{
+    height: 80vh;
+    padding: 2em;
+    padding-top: 6em;
+}
+
+.container{
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.card{
+    width: 30%;
+    text-align: center;
+    height: 60vh;
+    opacity: 0;
+    box-shadow: 0px 0px 10px 2px #000000;
+    animation: enter 2s ease-in-out forwards;
+}
+@keyframes enter {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.card-body{
+    background-size: cover;
+    height: 50vh;
+}
+.card-footer{
+    height: 10vh;
+    padding: 0.5em;
+    padding-top: 1em;
+    background-color: #000000;
+    font-weight: 600;
+    font-size: 1rem;
+}
+.card-text{
+    text-decoration: none;
+}
+
+#houses{
+    background-image: url(img/Winterfell.jpg);
+}
+#characters{
+    background-image: url(img/Daenerys.jpg);
+}
+#books{
+    background-image: url(img/Drogon.jpg);
+    background-position-y: center;
+    background-position-x: -8em;
+}

@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Cinzel';
+    color: #ffffff;
+}
+body{
+    background-image: url(img/Blackwater.jpg);
+    background-size: cover;
+}
+.header{
+    height: 20vh;
+    padding: 2em;
+    box-shadow: 0px 0px 10px 2px #000000;
+    background: rgba(0, 0, 0, 0.4);
+}
+.link{
+    font-size: 2.5rem;
+    text-decoration: none;
+    text-shadow: 5px 5px 10px #000000;
+    font-weight: 500;
+}
+.container{
+    display: flex;
+    min-height: 80vh;
+    background: rgba(0, 0, 0, 0.4);
+}
+.aside{
+    width: 20%;
+    box-shadow: 0px 0px 10px 2px #000000;
+}
+.select-house{
+    text-align: center;
+    padding: 1em;
+    box-shadow: 0px 0px 10px 2px #000000;
+}
+.select-house:hover{
+    background: rgba(255, 255, 255, 0.6);
+    color: #000000;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+.list{
+    width: 100%;
+    list-style-type: none;
+}
+.list__item{
+    padding: 1em;
+    text-align: center;
+    box-shadow: 0px 0px 10px 2px #000000;
+    font-weight: 600;
+}
+.list__item:hover{
+    background: rgba(255, 255, 255, 0.6);
+    color: #000000;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+.content{
+    width: 80%;
+    box-shadow: 0px 0px 10px 2px #000000;
+}
+#house-name{
+    text-align: center;
+    padding: 1em;
+    letter-spacing: 2px;
+}
+.house-info-container{
+    display: flex;
+}
+.house-info{
+    padding: 0 2em;
+    width: 75%;
+}
+#house-img{
+    width: 40%;
+    height: 30vh;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.info{
+    margin-bottom: 1em;
+}
+b{
+    text-decoration: underline #ffffff;
+}

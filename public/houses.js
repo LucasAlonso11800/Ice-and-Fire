@@ -1,4 +1,3 @@
-
 const targaryen = document.getElementById('targaryen');
 const stark = document.getElementById('stark');
 const arryn = document.getElementById('arryn');
@@ -37,14 +36,14 @@ martell.addEventListener('click', function () {
     getHouseData(285, 'url(img/Martell.png)')
 });
 
-const houseName = document.getElementById('houseName');
-const houseFounded = document.getElementById('houseFounded');
-const houseRegion = document.getElementById('houseRegion');
-const houseCoat = document.getElementById('houseCoat');
-const houseTitles = document.getElementById('houseTitles');
-const houseSeat = document.getElementById('houseSeat');
-const houseWords = document.getElementById('houseWords');
-const houseImg = document.getElementById('houseImg');
+const houseName = document.getElementById('house-name');
+const houseFounded = document.getElementById('house-founded');
+const houseRegion = document.getElementById('house-region');
+const houseCoat = document.getElementById('house-coat');
+const houseTitles = document.getElementById('house-titles');
+const houseSeat = document.getElementById('house-seat');
+const houseWords = document.getElementById('house-words');
+const houseImg = document.getElementById('house-img');
 
 const initialURL = "https://www.anapioficeandfire.com/api";
 
@@ -64,7 +63,7 @@ function getHouseData(houseId, img) {
         .catch(err => {
             throw err
         })
-}
+};
 
 function setHouseData(data, img) {
     houseName.innerHTML = `${data.name}`;
@@ -72,7 +71,7 @@ function setHouseData(data, img) {
     houseRegion.innerHTML = `<b>Region:</b> ${data.region}`;
     houseCoat.innerHTML = `<b>Coat of arms:</b> ${data.coatOfArms}`;
     houseTitles.innerHTML = `<b>Titles:</b> ${data.titles[0]}, ${data.titles[1]}, ${data.titles[2]}.`;
-    if (img === 'url(img/Tully.png)') {
+    if (img === 'url(img/Tully.png)' || 'url(img/Baratheon.png)') {
         houseTitles.innerHTML = `<b>Titles:</b> ${data.titles[0]}, ${data.titles[1]}.`;
     }
     houseSeat.innerHTML = `<b>Seats:</b> ${data.seats}`;

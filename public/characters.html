@@ -1,13 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="characters.css">
     <title>The World of Ice and Fire</title>
 </head>
+
 <body>
-    <h1>Characters</h1>
+    <header class="header">
+        <nav class="nav">
+            <a class="link" href="index.html">The world of Ice and Fire</a>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="characters">
+            <h2 class="select-characters">Select a character</h2>
+            <div class="list-container">
+                <ul class="list">
+                    <li class="list__item" id="ned">Eddard Stark</li>
+                    <li class="list__item" id="catelyn">Catelyn Stark</li>
+                    <li class="list__item" id="rob">Robb Stark</li>
+                    <li class="list__item" id="jon">Jon Snow</li>
+                    <li class="list__item" id="sansa">Sansa Stark</li>
+                    <li class="list__item" id="arya">Arya Stark</li>
+                </ul>
+                <ul class="list">
+                    <li class="list__item" id="bran">Bran Stark</li>
+                    <li class="list__item" id="robert">Robert Baratheon</li>
+                    <li class="list__item" id="cersei">Cersei Lannister</li>
+                    <li class="list__item" id="jaime">Jaime Lannister</li>
+                    <li class="list__item" id="tyrion">Tyrion Lannister</li>
+                    <li class="list__item" id="dany">Daenerys Targaryen</li>
+                </ul>
+            </div>
+        </div>
+
+        <main class="content">
+            <h2 id="character-name"></h2>
+            <div class="character-info-container">
+                <div class="character-info">
+                    <p class="info" id="character-gender"></p>
+                    <p class="info" id="character-born"></p>
+                    <p class="info" id="character-death"></p>
+                    <p class="info" id="character-titles"></p>
+                    <p class="info" id="character-alias"></p>
+                    <p class="info" id="character-actor"></p>
+                </div>
+                <div id="character-img"></div>
+            </div>
+        </main>
+    </div>
+    <script src="characters.js"></script>
 </body>
+
 </html>
