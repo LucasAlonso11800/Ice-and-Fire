@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -6,84 +6,166 @@
     color: #ffffff;
     scroll-behavior: smooth;
 }
-body{
+
+body {
     background-image: url(img/Blackwater.jpg);
     background-size: cover;
+    min-width: 370px;
 }
-.header{
+
+@media all and (max-width: 650px) {
+    body {
+        background-position-x: -8em;
+    }
+}
+
+.header {
     height: 20vh;
     padding: 2em;
     box-shadow: 0px 0px 10px 2px #000000;
     background: rgba(0, 0, 0, 0.4);
 }
-.link{
+
+@media all and (max-width: 650px) {
+    .header {
+        height: 25vh;
+        padding: 1em;
+    }
+}
+
+.link {
     font-size: 2.5rem;
     text-decoration: none;
     text-shadow: 5px 5px 10px #000000;
     font-weight: 500;
 }
-.container{
+
+.container {
     display: flex;
     min-height: 80vh;
     background: rgba(0, 0, 0, 0.4);
 }
-.aside{
+
+.aside {
     width: 20%;
     box-shadow: 0px 0px 10px 2px #000000;
 }
-.select-house{
+
+@media all and (max-width: 760px) {
+    .aside {
+        width: 30%;
+    }
+}
+
+.select-house {
     text-align: center;
     padding: 1em;
     box-shadow: 0px 0px 10px 2px #000000;
 }
-.select-house:hover{
+
+@media all and (max-width: 760px) {
+    .select-house {
+        padding: 0.5em;
+    }
+}
+
+.select-house:hover {
     background: rgba(255, 255, 255, 0.6);
     color: #000000;
     font-weight: bold;
     letter-spacing: 1px;
 }
-.list{
+
+.list {
     width: 100%;
     list-style-type: none;
 }
-.list__item{
+
+.list__item {
     padding: 1em;
     text-align: center;
     box-shadow: 0px 0px 10px 2px #000000;
     font-weight: 600;
 }
-.list__item:hover{
+
+@media all and (max-width: 760px) {
+    .list__item {
+        padding: 1em 0.5em;
+    }
+}
+
+.list__item:hover {
     background: rgba(255, 255, 255, 0.6);
     color: #000000;
     font-weight: bold;
     letter-spacing: 1px;
 }
-.content{
+
+.content {
     width: 80%;
     box-shadow: 0px 0px 10px 2px #000000;
 }
-#house-name{
+
+@media all and (max-width: 760px) {
+    .content {
+        width: 70%;
+    }
+}
+
+#house-name {
     text-align: center;
     padding: 1em;
     letter-spacing: 2px;
 }
-.house-info-container{
+
+@media all and (max-width: 760px) {
+    #house-name {
+        padding: 0.5em;
+    }
+}
+
+.house-info-container {
     display: flex;
 }
-.house-info{
+
+@media all and (max-width: 760px) {
+    .house-info-container {
+        flex-direction: column;
+    }
+}
+
+.house-info {
     padding: 0 2em;
     width: 75%;
 }
-#house-img{
+
+@media all and (max-width: 760px) {
+    .house-info {
+        width: 100%;
+        order: 2;
+    }
+}
+
+#house-img {
     width: 40%;
     height: 30vh;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
 }
-.info{
+
+@media all and (max-width: 760px) {
+    #house-img {
+        width: 100%;
+        order: 1;
+        margin-bottom: 1em;
+    }
+}
+
+.info {
     margin-bottom: 1em;
 }
-b{
+
+b {
     text-decoration: underline #ffffff;
 }
