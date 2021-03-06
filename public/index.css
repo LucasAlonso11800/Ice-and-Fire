@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -6,36 +6,79 @@
     color: #ffffff;
     scroll-behavior: smooth;
 }
-body{
+
+body {
     background-image: url(img/Robert\ and\ Rhaegar.jpg);
     background-size: cover;
     background-position-y: -4em;
     min-height: 100vh;
+    min-width: 340px;
 }
-.header{
+
+@media all and (max-width: 620px) {
+    body {
+        background-position-x: center
+    }
+}
+
+@media all and (min-height: 550px) {
+    body {
+        background-size: auto;
+        background-position-x: center;
+    }
+}
+
+.header {
     height: 20vh;
     padding: 2em;
 }
 
-.link{
+@media all and (max-width: 620px) {
+    .header {
+        height: auto;
+        padding: 1em;
+    }
+}
+
+.link {
     font-size: 2.5rem;
     text-decoration: none;
     text-shadow: 5px 5px 10px #000000;
     font-weight: 500;
 }
 
-.index{
+.index {
     height: 80vh;
     padding: 2em;
     padding-top: 6em;
 }
 
-.container{
+@media all and (max-height: 600px) {
+    .index {
+        padding-top: 2em;
+    }
+}
+
+@media all and (max-width: 620px) {
+    .index {
+        padding-top: 2em;
+    }
+}
+
+.container {
     margin: auto;
     display: flex;
     justify-content: space-between;
 }
-.card{
+
+@media all and (max-width: 620px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.card {
     width: 30%;
     text-align: center;
     height: 60vh;
@@ -43,19 +86,38 @@ body{
     box-shadow: 0px 0px 10px 2px #000000;
     animation: enter 2s ease-in-out forwards;
 }
+
+@media all and (max-width: 620px) {
+    .card {
+        width: 80%;
+        height: 40vh;
+        margin-bottom: 2em;
+    }
+}
+
 @keyframes enter {
-    0%{
+    0% {
         opacity: 0;
     }
-    100%{
+    100% {
         opacity: 1;
     }
 }
-.card-body{
+
+.card-body {
     background-size: cover;
     height: 50vh;
 }
-.card-footer{
+
+@media all and (max-width: 620px) {
+    .card-body {
+        height: 30vh;
+        background-size: cover;
+        background-position: center;
+    }
+}
+
+.card-footer {
     height: 10vh;
     padding: 0.5em;
     padding-top: 1em;
@@ -63,18 +125,81 @@ body{
     font-weight: 600;
     font-size: 1rem;
 }
-.card-text{
+
+.card-text {
     text-decoration: none;
 }
 
-#houses{
+#houses {
     background-image: url(img/Winterfell.jpg);
 }
-#characters{
+
+@media all and (max-width: 1000px) {
+    #houses {
+        background-position-x: -4em;
+    }
+}
+
+@media all and (max-width: 800px) {
+    #houses {
+        background-position-x: -8em;
+    }
+}
+
+@media all and (max-width: 620px) {
+    #houses {
+        background-position-x: center;
+    }
+}
+
+#characters {
     background-image: url(img/Daenerys.jpg);
 }
-#books{
+
+@media all and (max-width: 1000px) {
+    #characters {
+        background-position-x: -2em;
+    }
+}
+
+@media all and (max-width: 800px) {
+    #characters {
+        background-position-x: -4em;
+    }
+}
+
+@media all and (max-width: 620px) {
+    #characters {
+        background-position-x: center;
+    }
+}
+
+#books {
     background-image: url(img/Drogon.jpg);
     background-position-y: center;
     background-position-x: -8em;
+}
+
+@media all and (max-width: 1100px) {
+    #books {
+        background-position-x: -12em;
+    }
+}
+
+@media all and (max-width: 850px) {
+    #books {
+        background-position-x: -16em;
+    }
+}
+
+@media all and (max-width: 650px) {
+    #books {
+        background-position-x: -18em;
+    }
+}
+
+@media all and (max-width: 620px) {
+    #books {
+        background-position-x: center;
+    }
 }
