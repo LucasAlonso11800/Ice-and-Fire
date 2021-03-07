@@ -20,16 +20,16 @@ body {
     background: rgba(0, 0, 0, 0.4);
 }
 
-@media all and (max-width: 680px) {
+@media all and (max-width: 700px) {
     .header {
-        padding: 2em 1em;
+        padding: 1em;
+        height: auto;
     }
 }
 
-@media all and (max-width: 605px) {
-    .header {
-        height: 25vh;
-    }
+.nav {
+    display: flex;
+    justify-content: space-between;
 }
 
 .link {
@@ -37,6 +37,12 @@ body {
     text-decoration: none;
     text-shadow: 5px 5px 10px #000000;
     font-weight: 500;
+}
+
+.links {
+    margin-left: 1em;
+    width: 2em;
+    height: 2em;
 }
 
 .container {

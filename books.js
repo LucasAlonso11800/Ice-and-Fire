@@ -4,19 +4,19 @@ const storm = document.getElementById('storm');
 const feast = document.getElementById('feast');
 const dance = document.getElementById('dance');
 
-game.addEventListener('click', function () {
+game.addEventListener('click', function() {
     getBookData(1, 'url(img/Game.jpg)')
 });
-clash.addEventListener('click', function () {
+clash.addEventListener('click', function() {
     getBookData(2, 'url(img/Clash.jpg)')
 });
-storm.addEventListener('click', function () {
+storm.addEventListener('click', function() {
     getBookData(3, 'url(img/Storm.webp)')
 });
-feast.addEventListener('click', function () {
+feast.addEventListener('click', function() {
     getBookData(5, 'url(img/Feast.jpg)')
 });
-dance.addEventListener('click', function () {
+dance.addEventListener('click', function() {
     getBookData(8, 'url(img/Dance.webp)')
 });
 
@@ -31,15 +31,14 @@ const initialURL = "https://www.anapioficeandfire.com/api";
 
 function getBookData(bookId, img) {
     fetch(`${initialURL}/books/${bookId}`, {
-        method: 'GET',
-        headers: {
-            'Content-type': 'application/json',
-            'Accept': 'application/json'
-        },
-    })
+            method: 'GET',
+            headers: {
+                'Content-type': 'application/json',
+                'Accept': 'application/json'
+            },
+        })
         .then(res => res.json())
         .then(data => {
-            console.log(data)
             setBookData(data, img)
         })
         .catch(err => {

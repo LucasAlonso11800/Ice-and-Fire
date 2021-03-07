@@ -8,31 +8,31 @@ const baratheon = document.getElementById('baratheon');
 const tyrell = document.getElementById('tyrell');
 const martell = document.getElementById('martell');
 
-targaryen.addEventListener('click', function () {
+targaryen.addEventListener('click', function() {
     getHouseData(378, 'url(img/Targaryen.png)')
 });
-stark.addEventListener('click', function () {
+stark.addEventListener('click', function() {
     getHouseData(362, 'url(img/Stark.png)')
 });
-arryn.addEventListener('click', function () {
+arryn.addEventListener('click', function() {
     getHouseData(7, 'url(img/Arryn.png)')
 });
-tully.addEventListener('click', function () {
+tully.addEventListener('click', function() {
     getHouseData(395, 'url(img/Tully.png)')
 });
-greyjoy.addEventListener('click', function () {
+greyjoy.addEventListener('click', function() {
     getHouseData(169, 'url(img/Greyjoy.png)')
 });
-lannister.addEventListener('click', function () {
+lannister.addEventListener('click', function() {
     getHouseData(229, 'url(img/Lannister.png)')
 });
-baratheon.addEventListener('click', function () {
+baratheon.addEventListener('click', function() {
     getHouseData(17, 'url(img/Baratheon.png)')
 });
-tyrell.addEventListener('click', function () {
+tyrell.addEventListener('click', function() {
     getHouseData(398, 'url(img/Tyrell.png)')
 });
-martell.addEventListener('click', function () {
+martell.addEventListener('click', function() {
     getHouseData(285, 'url(img/Martell.png)')
 });
 
@@ -49,15 +49,14 @@ const initialURL = "https://www.anapioficeandfire.com/api";
 
 function getHouseData(houseId, img) {
     fetch(`${initialURL}/houses/${houseId}`, {
-        method: 'GET',
-        headers: {
-            'Content-type': 'application/json',
-            'Accept': 'application/json'
-        },
-    })
+            method: 'GET',
+            headers: {
+                'Content-type': 'application/json',
+                'Accept': 'application/json'
+            },
+        })
         .then(res => res.json())
         .then(data => {
-            console.log(data)
             setHouseData(data, img)
         })
         .catch(err => {
