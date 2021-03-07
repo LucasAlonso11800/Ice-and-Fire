@@ -13,12 +13,6 @@ body {
     min-width: 370px;
 }
 
-@media all and (max-width: 650px) {
-    body {
-        background-position-x: -8em;
-    }
-}
-
 .header {
     height: 20vh;
     padding: 2em;
@@ -27,6 +21,9 @@ body {
 }
 
 @media all and (max-width: 650px) {
+    body {
+        background-position-x: -8em;
+    }
     .header {
         height: 25vh;
         padding: 1em;
@@ -51,22 +48,10 @@ body {
     box-shadow: 0px 0px 10px 2px #000000;
 }
 
-@media all and (max-width: 760px) {
-    .aside {
-        width: 30%;
-    }
-}
-
 .select-house {
     text-align: center;
     padding: 1em;
     box-shadow: 0px 0px 10px 2px #000000;
-}
-
-@media all and (max-width: 760px) {
-    .select-house {
-        padding: 0.5em;
-    }
 }
 
 .select-house:hover {
@@ -89,6 +74,12 @@ body {
 }
 
 @media all and (max-width: 760px) {
+    .aside {
+        width: 30%;
+    }
+    .select-house {
+        padding: 0.5em;
+    }
     .list__item {
         padding: 1em 0.5em;
     }
@@ -106,44 +97,21 @@ body {
     box-shadow: 0px 0px 10px 2px #000000;
 }
 
-@media all and (max-width: 760px) {
-    .content {
-        width: 70%;
-    }
-}
-
 #house-name {
     text-align: center;
     padding: 1em;
     letter-spacing: 2px;
 }
 
-@media all and (max-width: 760px) {
-    #house-name {
-        padding: 0.5em;
-    }
-}
-
 .house-info-container {
     display: flex;
 }
 
-@media all and (max-width: 760px) {
-    .house-info-container {
-        flex-direction: column;
-    }
-}
+@media all and (max-width: 760px) {}
 
 .house-info {
     padding: 0 2em;
     width: 75%;
-}
-
-@media all and (max-width: 760px) {
-    .house-info {
-        width: 100%;
-        order: 2;
-    }
 }
 
 #house-img {
@@ -155,6 +123,19 @@ body {
 }
 
 @media all and (max-width: 760px) {
+    .content {
+        width: 70%;
+    }
+    #house-name {
+        padding: 0.5em;
+    }
+    .house-info-container {
+        flex-direction: column;
+    }
+    .house-info {
+        width: 100%;
+        order: 2;
+    }
     #house-img {
         width: 100%;
         order: 1;

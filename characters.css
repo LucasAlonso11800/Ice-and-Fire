@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -6,87 +6,177 @@
     color: #ffffff;
     scroll-behavior: smooth;
 }
-body{
+
+body {
     background-image: url(img/Westeros.jpg);
     background-size: cover;
-    background-position-y: -8em;
+    min-width: 410px;
 }
-.header{
+
+.header {
     height: 20vh;
     padding: 2em;
     box-shadow: 0px 0px 10px 2px #000000;
     background: rgba(0, 0, 0, 0.4);
 }
-.link{
+
+@media all and (max-width: 680px) {
+    .header {
+        padding: 2em 1em;
+    }
+}
+
+@media all and (max-width: 605px) {
+    .header {
+        height: 25vh;
+    }
+}
+
+.link {
     font-size: 2.5rem;
     text-decoration: none;
     text-shadow: 5px 5px 10px #000000;
     font-weight: 500;
 }
-.container{
+
+.container {
     background: rgba(0, 0, 0, 0.4);
     min-height: 80vh;
 }
-.characters{
+
+.characters {
     display: flex;
 }
-.select-characters{
-    width: 20%;
+
+.select-characters {
     text-align: center;
     padding: 1em;
     box-shadow: 0px 0px 10px 2px #000000;
 }
-.select-characters:hover{
+
+.select-characters:hover {
     background: rgba(255, 255, 255, 0.5);
     color: #000000;
     font-weight: bold;
     letter-spacing: 1px;
 }
-.list-container{
-    width: 80%;
+
+.list-container {
+    width: 20%;
 }
-.list{
-    width: 100%;
+
+.list {
     list-style-type: none;
-    display: flex;
 }
-.list__item{
+
+.list__item {
+    width: 100%;
     padding: 1em;
     text-align: center;
     box-shadow: 0px 0px 10px 2px #000000;
     font-weight: 600;
-    width: 17.5%;
 }
-.list__item:hover{
+
+@media all and (max-width: 725px) {
+    .list__item {
+        padding: 1em 0.5em;
+    }
+}
+
+.list__item:hover {
     background: rgba(255, 255, 255, 0.5);
     color: #000000;
     font-weight: bold;
     letter-spacing: 1px;
 }
-.content{
-    margin: auto;
-    width: 80%;
+
+.content {
+    width: 60%;
     padding: 2em;
+    padding-bottom: 0;
 }
-.character-info-container{
+
+.character-info-container {
     display: flex;
 }
-.character-info{
+
+.character-info {
     width: 75%;
 }
-#character-img{
+
+#character-img {
     width: 50%;
     height: 40vh;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
 }
-#character-name{
+
+#character-name {
     margin-bottom: 1em;
 }
-.info{
+
+@media all and (max-width: 725px) {
+    .character-info-container {
+        flex-direction: column;
+    }
+    .character-info {
+        width: 100%;
+        order: 2;
+    }
+    #character-img {
+        width: 100%;
+        height: 30vh;
+        order: 1;
+        margin-bottom: 1em;
+    }
+    #character-name {
+        text-align: center;
+    }
+}
+
+.info {
     margin-bottom: 1em;
 }
-b{
+
+b {
     text-decoration: underline #ffffff;
+}
+
+@media all and (max-width: 575px) {
+    .characters {
+        flex-direction: column;
+    }
+    .list-container {
+        width: 100%;
+    }
+    .list {
+        display: flex;
+        width: 100%;
+    }
+    .list__item {
+        width: 25%;
+    }
+    #list-left-1 {
+        order: 1;
+    }
+    #list-left-2 {
+        order: 2;
+    }
+    #list-right-1 {
+        order: 3;
+    }
+    #list-right-2 {
+        order: 4;
+    }
+    .content {
+        order: 5;
+        width: 100%;
+    }
+}
+
+@media all and (max-width: 470px) {
+    .list__item {
+        padding: 1em 0.25em;
+    }
 }
