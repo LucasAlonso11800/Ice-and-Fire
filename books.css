@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -6,86 +6,153 @@
     color: #ffffff;
     scroll-behavior: smooth;
 }
-body{
+
+body {
     background-image: url(img/Meereen.jpg);
     background-size: cover;
+    min-width: 340px;
 }
-.header{
+
+.header {
     height: 20vh;
     padding: 2em;
     box-shadow: 0px 0px 10px 2px #000000;
     background: rgba(0, 0, 0, 0.2);
 }
-.link{
+
+@media all and (max-width: 635px) {
+    .header {
+        padding: 1em;
+        height: 25vh;
+    }
+}
+
+.link {
     font-size: 2.5rem;
     text-decoration: none;
     text-shadow: 5px 5px 10px #000000;
     font-weight: 500;
 }
-.container{
+
+.container {
     background: rgba(0, 0, 0, 0.2);
     min-height: 80vh;
 }
-.books{
+
+.books {
     display: flex;
 }
-.select-book{
+
+.select-book {
     width: 20%;
     text-align: center;
     padding: 0.5em;
     box-shadow: 0px 0px 10px 2px #000000;
 }
-.select-book:hover{
+
+.select-book:hover {
     background: rgba(255, 255, 255, 0.5);
     color: #000000;
     font-weight: bold;
     letter-spacing: 1px;
 }
-.list-container{
+
+.list-container {
     width: 80%;
 }
-.list{
+
+.list {
     width: 100%;
     list-style-type: none;
     display: flex;
 }
-.list__item{
+
+.list__item {
     padding: 1em;
     text-align: center;
     box-shadow: 0px 0px 10px 2px #000000;
     font-weight: 600;
     width: 20%;
 }
-.list__item:hover{
+
+.list__item:hover {
     background: rgba(255, 255, 255, 0.5);
     color: #000000;
     font-weight: bold;
     letter-spacing: 1px;
 }
-.content{
+
+.content {
     margin: auto;
     width: 80%;
     padding: 2em;
 }
-.book-info-container{
+
+.book-info-container {
     display: flex;
     justify-content: left;
 }
-.book-info{
+
+.book-info {
     width: 40%;
 }
-#book-img{
+
+#book-img {
     width: 50%;
     height: 40vh;
     background-size: contain;
     background-repeat: no-repeat;
 }
-#book-name{
+
+#book-name {
     margin-bottom: 1em;
 }
-.info{
+
+.info {
     margin-bottom: 1em;
 }
-b{
+
+b {
     text-decoration: underline #ffffff;
+}
+
+@media all and (max-width: 700px) {
+    .container {
+        display: flex;
+        height: min-content;
+    }
+    .books {
+        width: 40%;
+        flex-direction: column;
+    }
+    .select-book {
+        width: 100%;
+    }
+    .list-container {
+        width: 100%;
+    }
+    .list {
+        flex-direction: column;
+    }
+    .list__item {
+        width: 100%;
+        height: 15vh;
+    }
+    .content {
+        margin: 0;
+        padding: 1em;
+        width: 60%;
+    }
+    #book-name {
+        text-align: center;
+    }
+    .book-info-container {
+        flex-direction: column;
+    }
+    .book-info {
+        width: 100%;
+    }
+    #book-img {
+        width: 100%;
+    }
 }
