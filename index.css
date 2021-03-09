@@ -14,7 +14,7 @@ body {
 }
 
 .background {
-    background-image: url(img/Robert\ and\ Rhaegar.jpg);
+    background-color: #ffffff;
     background-size: cover;
     position: fixed;
     width: 100%;
