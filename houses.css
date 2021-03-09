@@ -19,6 +19,9 @@ body {
     }
 }
 
+
+/* NAV */
+
 .header {
     height: 20vh;
     padding: 2em;
@@ -50,6 +53,9 @@ body {
     width: 2em;
     height: 2em;
 }
+
+
+/* CONTENT */
 
 .container {
     display: flex;

@@ -22,6 +22,9 @@ body {
     }
 }
 
+
+/* NAV */
+
 .header {
     height: 20vh;
     padding: 2em;
@@ -61,6 +64,9 @@ body {
         padding-top: 2em;
     }
 }
+
+
+/* CONTENT */
 
 .container {
     margin: auto;

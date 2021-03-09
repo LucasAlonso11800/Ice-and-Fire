@@ -13,6 +13,9 @@ body {
     min-width: 410px;
 }
 
+
+/* NAV */
+
 .header {
     height: 20vh;
     padding: 2em;
@@ -44,6 +47,9 @@ body {
     width: 2em;
     height: 2em;
 }
+
+
+/* CONTENT */
 
 .container {
     background: rgba(0, 0, 0, 0.4);
