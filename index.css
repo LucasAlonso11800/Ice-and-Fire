@@ -13,7 +13,7 @@ body {
     min-width: 340px;
 }
 
-@media all and (min-height: 550px) {
+@media all and (max-height: 550px) {
     body {
         background-size: auto;
         background-position-x: center;
