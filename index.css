@@ -10,15 +10,13 @@
 body {
     position: relative;
     min-width: 340px;
-    min-height: 100vh;
 }
 
 .background {
-    background-color: #ffffff;
     background-size: cover;
     position: fixed;
     width: 100%;
-    min-height: 100vh;
+    height: 100vh;
     z-index: -10;
 }
 
