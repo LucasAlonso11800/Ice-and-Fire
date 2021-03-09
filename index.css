@@ -27,9 +27,6 @@ body {
 }
 
 @media all and (max-width: 620px) {
-    body {
-        background-position-x: center
-    }
     .header {
         height: auto;
         padding: 1em;
