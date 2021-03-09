@@ -8,17 +8,9 @@
 }
 
 body {
-    position: relative;
-    min-width: 370px;
-}
-
-.background {
     background-image: url(img/Blackwater.jpg);
     background-size: cover;
-    position: fixed;
-    width: 100%;
-    height: 100vh;
-    z-index: -10;
+    min-width: 370px;
 }
 
 .header {
