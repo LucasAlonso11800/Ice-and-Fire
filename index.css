@@ -10,8 +10,6 @@
 body {
     background-image: url(img/Robert\ and\ Rhaegar.jpg);
     background-size: cover;
-    background-position-y: -4em;
-    min-height: 100vh;
     min-width: 340px;
 }
 
@@ -31,9 +29,6 @@ body {
 }
 
 @media all and (max-width: 620px) {
-    body {
-        background-position-x: center
-    }
     .header {
         height: auto;
         padding: 1em;
